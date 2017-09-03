@@ -6,4 +6,12 @@ he parameter "you" is the stylishness of your clothes, in the range
  that if either of you has style of 2 or less, then the result is 0 (no). Otherwise the result
   is 1 (maybe).     */
 
-  
+  public int dateFashion(int you, int date) {
+    if(you <= 2 || date <= 2)
+        return 0;
+          
+    if(you >= 8 || date >= 8)
+        return 2;
+                    
+    return 1;
+}
