@@ -3,4 +3,23 @@ successful when the number of cigars is between 40 and 60, inclusive. Unless it 
 weekend, in which case there is no upper bound on the number of cigars. Return true if the 
 party with the given values is successful, or false otherwise. */
 
+public boolean cigarParty(int cigars, boolean isWeekend) 
+{
+  if(!isWeekend)
+  {
+    return (cigars>=40 && cigars <=60);
+  }
+  if(isWeekend)
+  return cigars>=40;
+  return false;
+}    
 
+or 
+
+
+public boolean cigarParty(int cigars, boolean isWeekend) {
+    if(isWeekend)
+        return 40 <= cigars;
+          
+    return 40 <= cigars && cigars <= 60;
+}
