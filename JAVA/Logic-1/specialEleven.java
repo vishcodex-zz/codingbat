@@ -2,3 +2,12 @@
 multiple of 11. Return true if the given non-negative number is special. Use the % "mod" 
 perator -- see Introduction to Mod */
 
+public boolean specialEleven(int n) 
+{
+  if(n%11 == 0)
+  return true;
+  if(n%11 == 1)
+  return true;
+  else
+  return false;
+}
